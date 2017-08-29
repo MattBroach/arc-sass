@@ -1,0 +1,31 @@
+// Flexbox mixins
+=flexbox()
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+
+=flex($values)
+  -webkit-box-flex: $values
+  -moz-box-flex:  $values
+  -webkit-flex:  $values
+  -ms-flex:  $values
+  flex:  $values
+
+// Background mixins
+%background-cover
+  background-repeat: no-repeat 
+  background-position: center center
+  background-attachment: fixed
+  
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+// Transition/Animation
+=all-transition($speed)
+  -webkit-transition: all $speed
+  -moz-transition: all $speed
+  transition: all $speed
